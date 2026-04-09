@@ -17,7 +17,7 @@ import streamlit as st
 
 @st.cache_resource  # Se carga una sola vez, no en cada interacción
 def cargar_modelo():
-    artefacto = joblib.load("mejor_modelo_predict.pkl")
+    artefacto = joblib.load("mejor_modelo_predictivo.pkl")
     return (
         artefacto["pipeline"],
         artefacto["columnas_entrada"],
